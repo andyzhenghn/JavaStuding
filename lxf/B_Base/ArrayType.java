@@ -1,3 +1,5 @@
+package B_Base;
+
 public class ArrayType {
     public static void main(String[] args) {
         // java数组的特点：
