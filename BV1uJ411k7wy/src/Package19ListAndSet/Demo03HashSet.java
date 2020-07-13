@@ -29,7 +29,7 @@ public class Demo03HashSet {
         /**
          * add方法
          * 1. 会先调用 hashCode()方法查看是否有相同的 hash值
-         * 2. 再使用 equals()方法查看是否相同
+         * 2. 再使用 equals()方法查看内容是否相同
          */
         hashSet.add(1);
         hashSet.add(3);
