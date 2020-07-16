@@ -23,11 +23,11 @@ public class Demo07Collections {
         // sort方法需要使用的数据类，必须impel Comparable
         Collections.sort(list);
 
-        ArrayList<Persion> list1 = new ArrayList<>();
-        list1.add(new Persion("haha", 12));
-        list1.add(new Persion("hasha", 11));
-        list1.add(new Persion("zahda", 14));
-        list1.add(new Persion("hahda", 14));
+        ArrayList<Person> list1 = new ArrayList<>();
+        list1.add(new Person("haha", 12));
+        list1.add(new Person("hasha", 11));
+        list1.add(new Person("zahda", 14));
+        list1.add(new Person("hahda", 14));
         Collections.sort(list1);
         System.out.println(list1);
 
@@ -40,9 +40,9 @@ public class Demo07Collections {
         });
         System.out.println(list);
 
-        Collections.sort(list1, new Comparator<Persion>() {
+        Collections.sort(list1, new Comparator<Person>() {
             @Override
-            public int compare(Persion o1, Persion o2) {
+            public int compare(Person o1, Person o2) {
                 int result = o1.getAge() - o2.getAge();
                 if (result == 0) {
                     result = o1.getName().charAt(0) - o2.getName().charAt(0);

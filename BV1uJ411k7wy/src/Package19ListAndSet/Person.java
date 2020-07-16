@@ -2,11 +2,11 @@ package Package19ListAndSet;
 
 import java.util.Objects;
 
-public class Persion implements Comparable<Persion> {
+public class Person implements Comparable<Person> {
     private String name = "hah";
     private Integer age = 18;
 
-    public Persion(String name, Integer age) {
+    public Person(String name, Integer age) {
         this.name = name;
         this.age = age;
     }
@@ -15,9 +15,9 @@ public class Persion implements Comparable<Persion> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Persion persion = (Persion) o;
-        return Objects.equals(name, persion.name) &&
-                Objects.equals(age, persion.age);
+        Person person = (Person) o;
+        return Objects.equals(name, person.name) &&
+                Objects.equals(age, person.age);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class Persion implements Comparable<Persion> {
     }
 
     @Override
-    public int compareTo(Persion o) {
+    public int compareTo(Person o) {
         // this - o 升序
         // o - this 降序
         return this.getAge() - o.getAge();
@@ -50,7 +50,7 @@ public class Persion implements Comparable<Persion> {
 
     @Override
     public String toString() {
-        return "Persion{" +
+        return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

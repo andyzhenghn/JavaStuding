@@ -8,12 +8,12 @@ package Package19ListAndSet;
 
 public class Demo04HashCode {
     public static void main(String[] args) {
-        Persion persion = new Persion("hah", 13);
-        int h1 = persion.hashCode();
+        Person person = new Person("hah", 13);
+        int h1 = person.hashCode();
         System.out.println(h1);
 
-        Persion persion1 = new Persion("jj", 12);
-        int h2 = persion1.hashCode();
+        Person person1 = new Person("jj", 12);
+        int h2 = person1.hashCode();
         System.out.println(h2);
 
         /**
