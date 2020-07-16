@@ -2,18 +2,18 @@ package Package20Map;
 
 import java.util.Objects;
 
-public class Persion {
+class Person {
     public String name;
     public int age;
 
-    public Persion(String name, int age) {
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
     @Override
     public String toString() {
-        return "Persion{" +
+        return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
@@ -23,9 +23,9 @@ public class Persion {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Persion persion = (Persion) o;
-        return age == persion.age &&
-                Objects.equals(name, persion.name);
+        Person person = (Person) o;
+        return age == person.age &&
+                Objects.equals(name, person.name);
     }
 
     @Override
