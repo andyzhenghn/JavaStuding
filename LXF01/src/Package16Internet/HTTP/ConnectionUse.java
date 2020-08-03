@@ -7,7 +7,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.Map;
 
-public class Connection {
+public class ConnectionUse {
     public static void main(String[] args) throws IOException {
         URL url = new URL("https://www.bing.com");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
