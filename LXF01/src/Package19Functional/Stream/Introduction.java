@@ -1,13 +1,13 @@
 package Package19Functional.Stream;
 
 public class Introduction {
-    public static void main(String[] args) {
-        Stream<BigInteger> naturals = createNaturalStream(); // 全体自然数
-    }
+    // public static void main(String[] args) {
+    //    Stream<BigInteger> naturals = createNaturalStream(); // 全体自然数
+    // }
 
-    private static Stream<BigInteger> createNaturalStream() {
-        // return new Stream();
-    }
+    // private static void createNaturalStream() {
+    //      return new Stream();
+    // }
 }
 
 /**

@@ -1,25 +1,20 @@
 package Package19Functional;
 
-import com.sun.tools.javac.util.List;
-
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 public class Methods {
     public static void main(String[] args) {
-        String[] array = new String[] {"aaa", "bbb", "ccc"};
+//        String[] array = new String[] {"aaa", "bbb", "ccc"};
         /**
          * 所谓方法引用，是指如果某个方法签名和接口恰好一致，就可以直接传入方法引用
          * 除了方法名外，方法参数一致，返回类型相同，因此可以直接把方法名作为 Lambda表达式传入
          * 注意：在这里，方法签名只看参数类型和返回类型，不看方法名称，也不看类的继承关系
          */
-        Arrays.sort(array, Methods::cmp);
-        System.out.println(String.join(", "), array);
-
-        // 构造方法引用
-        List<String> names = List.of("Bob", "ALice", "Tim");
-        List<Person> persons = names.stream().map(Person::new).collect(Collectors.toList());
-        System.out.println(persons);
+//        Arrays.sort(array, Methods::cmp);
+//        System.out.println(String.join(", "), array);
+//
+//        // 构造方法引用
+//        List<String> names = List.of("Bob", "ALice", "Tim");
+//        List<Person> persons = names.stream().map(Person::new).collect(Collectors.toList());
+//        System.out.println(persons);
     }
 
     static int comp(String o1, String o2) {
