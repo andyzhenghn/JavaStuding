@@ -1,7 +1,7 @@
 package com.study.BV1uJ411k7wy.Package05API;
 
 
-import Package04Class.Student;
+import com.study.BV1uJ411k7wy.Package04Class.Student;
 
 public class Demo04Anonymous {
     public static void main(String[] args) {
