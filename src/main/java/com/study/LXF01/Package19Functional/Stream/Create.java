@@ -1,8 +1,7 @@
 package com.study.LXF01.Package19Functional.Stream;
 
-import com.sun.tools.javac.util.List;
-
 import java.util.Arrays;
+import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
@@ -16,9 +15,9 @@ public class Create {
 
         // 基于一个数组或者 Collection
         Stream<String> stream1 = Arrays.stream(new String[] {"a", "b", "c"});
-        Stream<String> stream2 = List.of("x", "y", "z").stream();
+        // Stream<String> stream2 = List.of("x", "y", "z").stream();
         stream1.forEach(System.out::println);
-        stream2.forEach(System.out::println);
+        // stream2.forEach(System.out::println);
 
         // 基于 Supplier
         Stream<Integer> s = Stream.generate(new NatualSupplier());
