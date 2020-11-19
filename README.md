@@ -6,5 +6,5 @@
 3. Demos
 
 ## requirement
-1. JDK1.8+
+1. JDK11+
 
